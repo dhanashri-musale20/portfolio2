@@ -6,15 +6,15 @@ const Portfolio = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       <header className="bg-pink">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <nav className="space-x-4">
-            <a className="text-gray-600 hover:text-gray-900" href="#">Works</a>
-            <a className="text-gray-600 hover:text-gray-900" href="#">Blog</a>
-            <a className="text-gray-600 hover:text-gray-900" href="#">Contact</a>
-          </nav>
-        </div>
-      </header>
-
+  <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div className="flex-grow"></div> {/* This div will take up the remaining space */}
+    <nav className="space-x-4 ml-auto"> {/* Added ml-auto to push nav to the right */}
+      <a className="text-black hover:text-gray-900" href="#">Works</a>
+      <a className="text-black hover:text-gray-900" href="#">Blog</a>
+      <a className="text-black hover:text-gray-900" href="#">Contact</a>
+    </nav>
+  </div>
+</header>
       <main className="container mx-auto px-4 py-8">
         <section className="bg-pink-400 p-8 rounded-lg shadow-md flex flex-col md:flex-row items-center">
           <div className="md:w-2/3">
@@ -47,14 +47,14 @@ const Portfolio = () => {
             <div className="bg-red-300 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Movie Search Application</h3>
               <p className="text-black mb-4">12 Feb 2025 | Design, Pattern</p>
-              <p className="text-gray-600">
+              <p className="text-rgb(162, 34, 99)">
               A Movie Search Application is a web or mobile-based platform that allows users to search for movies by title, genre, release year, or other filters. It typically fetches real-time data from a movie database API, providing users with details such as plot summaries, cast, ratings, trailers, and reviews. Some advanced versions also offer personalized recommendations, watchlists, and streaming availability. Designed with an intuitive UI, the app enhances user experience by offering quick search functionality, responsive design, and seamless navigation.
               </p>
             </div>
             <div className="bg-red-300 p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold mb-2">Trafalgar Portfolio</h3>
               <p className="text-black mb-4">10 Feb 2025 | Figma, Icon Design</p>
-              <p className="text-gray-600">
+              <p className="rgb(162, 34, 99)">
               The Trafalgar Portfolio is a modern and visually appealing portfolio website design that showcases projects, skills, and professional achievements. It features a clean, minimalistic layout with smooth animations and an intuitive user interface, making it easy for visitors to navigate. Typically built with technologies like React.js, Tailwind CSS, and modern UI/UX principles, it includes sections like an about page, project gallery, testimonials, and contact form. The Trafalgar Portfolio emphasizes responsiveness and accessibility, ensuring a seamless experience across all devices while maintaining a professional and elegant aesthetic.
               </p>
             </div>
@@ -66,7 +66,7 @@ const Portfolio = () => {
 
       <footer className="bg-white py-6 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p className="text-black">©2020 All rights reserved</p>
+          <p className="text-black font-bold">©2025 All rights reserved</p>
         </div>
       </footer>
     </div>
